@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Simplidied</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class= "logo" alt="">
             <ul>
                <li><a href="#about">About</a></li> 
                <li><a href="#discord">Discord</a></li> 
@@ -17,54 +18,68 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best Place to Learn Frontend</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, corrupti.</p>
-                <button>Start Now</button>    
+            <div class="row">
+                <div>
+                    <h1>Best Place to Learn Frontend</h1>
+                    <p class="subheader">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, corrupti.</p>
+                    <button>Start Now</button>    
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" alt="Home page image">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home page image">
-            </figure>
         </header>
     </section>
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, minima!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum.</p>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section_description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, minima!</p>
+                        <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum.</p>
+                    </div>
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/about.jpg" alt="">
+                    </figure>
+                </div>
             </div>
-            <figure>
-                <img src="./assets/about.jpg" alt="">
-            </figure>
         </section>
-        <section id="discord"></section>
+        <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="">
-            </figure>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat.</p>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="">
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore.</p>
+                        <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat.</p>
+                    </div>
+                </div>
             </div>
+        </section>
         <section id="contact">
           <h2>Contact</h2>  
-          <form>
-            <Label>Email</Label>
-            <input type="text" placeholder="jane@example.com">
-            <label>Messge</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="jane@exmaple.com"></textarea>
-          </form>
+          <div class="row">
+            <form>
+                <Label>Email</Label>
+                <input type="email" placeholder="jane@example.com">
+                <label>Messge</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="jane@example.com"></textarea>
+                <button>Contact Us!</button>
+            </form>
+        </div>
         </section>
     </main>
 
-    <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#dicord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+    <footer >
+        <img class="footer__log" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#dicord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
